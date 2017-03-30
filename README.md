@@ -1,0 +1,112 @@
+int a=2;
+int b=3;
+int c=4;
+int d=5;
+int e=6;
+int f=7;
+int g=8;
+char state;
+
+#define ON LOW
+#define OFF HIGH
+void setup() {
+  // put your setup code here, to run once:
+pinMode (a,OUTPUT);
+pinMode (b,OUTPUT);
+pinMode (c,OUTPUT);
+pinMode (d,OUTPUT);
+pinMode (e,OUTPUT);
+pinMode (f,OUTPUT);
+pinMode (g,OUTPUT);
+
+Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+int ldr;
+if(state==1)
+{
+  ldr=analogRead(A0);
+  Serial.println(ldr);
+  delay(1000);
+}
+  
+  else 
+  {
+    digitalWrite(a,OFF);
+    digitalWrite(b,ON);
+    digitalWrite(c,ON);
+    digitalWrite(d,OFF);
+    digitalWrite(e,OFF);
+    digitalWrite(f,OFF);
+    digitalWrite(g,OFF);
+    delay(1000);
+     digitalWrite(a,ON);
+    digitalWrite(b,ON);
+    digitalWrite(c,OFF);
+    digitalWrite(d,ON);
+    digitalWrite(e,ON);
+    digitalWrite(f,OFF);
+    digitalWrite(g,ON);
+    delay(1000);
+     digitalWrite(a,ON);
+    digitalWrite(b,ON);
+    digitalWrite(c,ON);
+    digitalWrite(d,ON);
+    digitalWrite(e,OFF);
+    digitalWrite(f,OFF);
+    digitalWrite(g,ON);
+    delay(1000);
+     digitalWrite(a,OFF);
+    digitalWrite(b,ON);
+    digitalWrite(c,ON);
+    digitalWrite(d,OFF);
+    digitalWrite(e,OFF);
+    digitalWrite(f,ON);
+    digitalWrite(g,ON);
+    delay(1000);
+     digitalWrite(a,ON);
+    digitalWrite(b,OFF);
+    digitalWrite(c,ON);
+    digitalWrite(d,ON);
+    digitalWrite(e,OFF);
+    digitalWrite(f,ON);
+    digitalWrite(g,ON);
+    delay(1000);
+     digitalWrite(a,ON);
+    digitalWrite(b,OFF);
+    digitalWrite(c,ON);
+    digitalWrite(d,ON);
+    digitalWrite(e,ON);
+    digitalWrite(f,ON);
+    digitalWrite(g,ON);
+    delay(1000);
+     digitalWrite(a,ON);
+    digitalWrite(b,ON);
+    digitalWrite(c,ON);
+    digitalWrite(d,OFF);
+    digitalWrite(e,OFF);
+    digitalWrite(f,OFF);
+    digitalWrite(g,OFF);
+    delay(1000);
+     digitalWrite(a,ON);
+    digitalWrite(b,ON);
+    digitalWrite(c,ON);
+    digitalWrite(d,ON);
+    digitalWrite(e,ON);
+    digitalWrite(f,ON);
+    digitalWrite(g,ON);
+    delay(1000);
+     digitalWrite(a,ON);
+    digitalWrite(b,ON);
+    digitalWrite(c,ON);
+    digitalWrite(d,ON);
+    digitalWrite(e,OFF);
+    digitalWrite(f,ON);
+    digitalWrite(g,ON);
+    delay(1000);
+    
+    
+  }
+}
